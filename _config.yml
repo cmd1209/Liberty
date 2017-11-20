@@ -13,14 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
+title: The Liberty Bremerhaven
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  THE LIBERTY – Bremerhavens neues Themenhotel, das Anfang 2018 eröffnet wurde, liegt an einzigartiger, historischer Stelle am neuen Hafen wo über 7 Millionen Auswanderer Europa verließen und Ihr Glück in der neuen Welt suchten.
+  Das luxuriöse, moderne und elegante Ambiente des 4 Sterne SUPERIOR Hotels, wird  ein weiterer Anziehungspunkt in der Seestadt Bremerhaven sein.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.libertybremerhaven.de/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -32,3 +31,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  
+sass:
+  sass_dir: assets/stylesheets
+  style: :compressed
