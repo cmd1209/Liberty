@@ -1,25 +1,87 @@
-.logo
-	width: 365px
-	height: auto
+.logo-block
+	display: flex
+	flex-flow: row wrap
+	align-items: center
+	justify-content: center
+	width: 315px
+	background: url($baseurl + "/assets/images/spiration-light.png") repeat
+	border-left: 2px solid $gold
+	border-right: 2px solid $gold
+	border-bottom: 2px solid $gold
+	padding: 2em 2em 1.25em 2em
 	position: absolute
 	left: 50%
-	top: 40px
+	top: 0
 	transform: translateX(-50%)
+	z-index: 100
+	transition: transform 0.5s ease-in-out
+	.logo
+		width: 300px
+		height: auto
+		flex: 1
+	.star-logo
+		flex-basis: 20%
+		width: 100px
+		height: auto
+		margin: 0 0 1.25em 0 
+	.logo-text
+		margin: 1.6em 0 0 0 
+		color: $gold
+		text-transform: uppercase
+		font-size: 80%
+		letter-spacing: 1.3px
 
-.logo-wrapper
+.logo-long
+	opacity: 1
+	display: flex
+	flex-flow: row nowrap
+	align-items: center
+	justify-content: center
+	background-color: rgba($light-grey, 0.88)
+	padding: 1em
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 99
 	width: 100%
-	position: relative
+	transform: translateY(-100%)
+	transition: transform 0.5s ease-in-out
+	.logo	
+		width: 240px
+		height: auto
+		margin: 0 2em
+	.star-logo
+		width: 85px
+		height: auto
+		margin: 0 2em 
+	.logo-text
+		margin: 0 2em
+		color: $gold
+		text-transform: uppercase
+		font-size: 75%
+		letter-spacing: 1.3px
+
+.popdown
+	transform: translateY(0)
+.popup
+	transform: translate(-50%, -100%)
+
 
 .keyvisual
 	max-width: 100%
 	height: 680px
-	background: url('/assets/images/libertykv01.jpg')
-	background-repeat: no-repeat
-	background-size: cover
-	background-position: center
 	@media all and (max-width: $screen-l)
 		height: 650px
 	@media all and (max-width: $screen-m)
 		height: 500px
 	@media all and (max-width: $screen-s)
 		height: 400px
+
+.kv01
+	background: url($baseurl + "/assets/images/libertykv01.jpg") center center / cover no-repeat
+.kv02
+	background: url($baseurl + "/assets/images/libertykv02.jpg") center center / cover no-repeat
+.kv03
+	background: url($baseurl + "/assets/images/libertykv03.jpg") center center / cover no-repeat
+.kv04
+	background: url($baseurl + "/assets/images/libertykv04.jpg") center center / cover no-repeat

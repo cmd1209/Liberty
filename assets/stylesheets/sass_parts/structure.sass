@@ -12,7 +12,11 @@ $screen-xs: 480px
 @media all and (max-width: $screen-xs)
 
 body
-	background-color: $light-background
+	background-color: $light-grey
+
+a
+	&:hover
+		color: $orange!important
 
 .description
 	padding: 2em 25%
@@ -22,5 +26,14 @@ body
 
 .wrapper
 	position: relative
-	margin: 0 auto
-	max-width: $screen-m
+
+	// temp did away with the max-width scaling
+
+	// margin: 0 auto
+	// max-width: $screen-xl
+	// @media all and (max-width: $screen-l)
+	// 	max-width: $screen-l
+	// @media all and (max-width: $screen-m)
+	// 	max-width: $screen-m
+
+	$border: 2px solid $gold

@@ -1,0 +1,52 @@
+.cover
+	position: relative
+.streetview
+	background: url($baseurl + '/assets/images/liberty_room_streetview.jpg') center center / cover no-repeat
+.waterview
+	background: url($baseurl + '/assets/images/liberty_room_waterview.jpg') center center / cover no-repeat
+.bar
+	background: url($baseurl + '/assets/images/liberty_bar.jpg') center center / cover no-repeat
+.restaurant
+	background: url($baseurl + '/assets/images/liberty_restaurant.jpg') center center / cover no-repeat
+.feature-description
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+.flexrow
+	display: flex
+	flex-flow: row wrap
+.flexitem
+	flex-basis: 50%
+	@media all and (max-width: $screen-s)
+		flex-basis: 100%
+.featbox
+	height: 350px
+.blue
+	background: url($baseurl + "/assets/images/spiration-blue.png") repeat
+.gold
+	background: url($baseurl + "/assets/images/spiration-gold.png") repeat
+.textcontain
+	position: relative
+	text-align: center
+	color: $light-grey
+.pricebox
+	background-color: rgba($light-grey, 0.85)
+	position: absolute
+	width: 250px
+	min-height: 70px
+	bottom: 0
+	right: 0
+	color: $gold
+	padding: 1em 1.5em 1em 1em
+	p
+		text-align: center
+		margin: -3px 0 5px 0
+	h2, h5
+		text-align: right
+	h2
+		font-weight: 900
+.orangeborder
+	border-left: 1em solid $orange
+.blueborder
+	border-left: 1em solid $blue
