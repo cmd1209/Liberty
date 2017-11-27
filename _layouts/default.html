@@ -2,8 +2,12 @@
 <html>
   {% include head.html %}
   <body>
-  	{% include header.html %}
-  	{% include description.html %}
-  	{% include features.html %}
-{% include footer.html %}  </body>
+  	<div class="wrapper">
+	  	{% include header.html %}
+	  	{% include carousel.html %}
+	  	{% include description.html %}
+	  	{% include features.html %}
+			{% include footer.html %}
+  	</div>
+	</body>
 </html>

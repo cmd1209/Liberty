@@ -18,8 +18,8 @@ email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   THE LIBERTY – Bremerhavens neues Themenhotel, das Anfang 2018 eröffnet wurde, liegt an einzigartiger, historischer Stelle am neuen Hafen wo über 7 Millionen Auswanderer Europa verließen und Ihr Glück in der neuen Welt suchten.
   Das luxuriöse, moderne und elegante Ambiente des 4 Sterne SUPERIOR Hotels, wird  ein weiterer Anziehungspunkt in der Seestadt Bremerhaven sein.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.libertybremerhaven.de" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/tester" # the subpath of your site, e.g. /blog
+url: "http://www.libertybremerhaven.de/tester/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -28,6 +28,8 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - octopress-autoprefixer
+  
 exclude:
   - Gemfile
   - Gemfile.lock

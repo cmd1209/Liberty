@@ -12,7 +12,7 @@ $screen-xs: 480px
 @media all and (max-width: $screen-xs)
 
 body
-	background-color: $light-grey
+	background-color: $dark-grey
 
 a
 	&:hover
@@ -29,11 +29,15 @@ a
 
 	// temp did away with the max-width scaling
 
-	// margin: 0 auto
-	// max-width: $screen-xl
-	// @media all and (max-width: $screen-l)
-	// 	max-width: $screen-l
-	// @media all and (max-width: $screen-m)
-	// 	max-width: $screen-m
+	margin: 0 auto
+	max-width: $screen-xl
+	@media all and (max-width: $screen-l)
+		max-width: $screen-l
+	@media all and (max-width: $screen-m)
+		max-width: $screen-m
+	@media all and (max-width: $screen-s)
+		max-width: $screen-s
+	@media all and (max-width: $screen-xs)
+		max-width: $screen-xs
 
 	$border: 2px solid $gold

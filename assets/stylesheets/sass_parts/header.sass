@@ -1,6 +1,15 @@
+.eroeffnung
+	position: absolute
+	top: 50px
+	right: 0
+	z-index: 98
+	@media all and (max-width: $screen-m)
+		top: 25px
+		width: 235px
+		height: auto
 .logo-block
 	display: flex
-	flex-flow: row wrap
+	flex-flow: column wrap
 	align-items: center
 	justify-content: center
 	width: 315px
@@ -15,21 +24,30 @@
 	transform: translateX(-50%)
 	z-index: 100
 	transition: transform 0.5s ease-in-out
+	@media all and (max-width: $screen-m)
+		width: 205px
+		padding: 1em
 	.logo
 		width: 300px
 		height: auto
 		flex: 1
+		@media all and (max-width: $screen-m)
+			width: 195px
 	.star-logo
 		flex-basis: 20%
 		width: 100px
 		height: auto
-		margin: 0 0 1.25em 0 
+		margin: 0 0 1.25em 0
+		@media all and (max-width: $screen-m)
+			width: 85px 
 	.logo-text
 		margin: 1.6em 0 0 0 
 		color: $gold
 		text-transform: uppercase
 		font-size: 80%
 		letter-spacing: 1.3px
+		@media all and (max-width: $screen-m)
+			font-size: 75%
 
 .logo-long
 	opacity: 1
@@ -65,23 +83,3 @@
 	transform: translateY(0)
 .popup
 	transform: translate(-50%, -100%)
-
-
-.keyvisual
-	max-width: 100%
-	height: 680px
-	@media all and (max-width: $screen-l)
-		height: 650px
-	@media all and (max-width: $screen-m)
-		height: 500px
-	@media all and (max-width: $screen-s)
-		height: 400px
-
-.kv01
-	background: url($baseurl + "/assets/images/libertykv01.jpg") center center / cover no-repeat
-.kv02
-	background: url($baseurl + "/assets/images/libertykv02.jpg") center center / cover no-repeat
-.kv03
-	background: url($baseurl + "/assets/images/libertykv03.jpg") center center / cover no-repeat
-.kv04
-	background: url($baseurl + "/assets/images/libertykv04.jpg") center center / cover no-repeat
