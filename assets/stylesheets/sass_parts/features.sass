@@ -9,10 +9,18 @@
 .restaurant
 	background: url($baseurl + '/assets/images/liberty_restaurant.jpg') center center / cover no-repeat
 .feature-description
-	position: absolute
-	top: 50%
-	left: 50%
-	transform: translate(-50%,-50%)
+	padding: 0 3em
+	text-shadow: 0 1px 5px black
+	// position: absolute
+	// top: 50%
+	// left: 50%
+	// transform: translate(-50%,-50%)
+.feature-title
+	text-shadow: 0 1px 5px black
+	text-transform: uppercase
+	margin: 0 0 0.5em 0
+	font-weight: 400
+	letter-spacing: 1px
 .flexrow
 	display: flex
 	flex-flow: row wrap
@@ -21,7 +29,11 @@
 	@media all and (max-width: $screen-s)
 		flex-basis: 100%
 .featbox
-	height: 350px
+	height: 450px
+.grey
+	background: url($baseurl + "/assets/images/spiration-grey.png") repeat
+.orange
+	background: url($baseurl + "/assets/images/spiration-orange.png") repeat
 .blue
 	background: url($baseurl + "/assets/images/spiration-blue.png") repeat
 .gold
@@ -30,7 +42,11 @@
 	position: relative
 	text-align: center
 	color: $light-grey
+	display: flex
+	flex-direction: column
+	justify-content: center
 .pricebox
+	display: none // temp disabled
 	background-color: rgba($light-grey, 0.85)
 	position: absolute
 	width: 250px

@@ -27,7 +27,7 @@
   		var scrollTop = $window.scrollTop();
   		logolong.toggleClass('popdown', scrollTop > prev);
   		logoblock.toggleClass('popup', scrollTop > prev);
-  		pricebox.addClass('priceslide', scrollTop > 850);
+  		// pricebox.addClass('priceslide', scrollTop > 850);
   		prev = scrollTop;
 		});
 
