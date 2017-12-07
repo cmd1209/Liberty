@@ -2,8 +2,11 @@
 	<div class="flexrow">
 		<div class="featbox flexitem textcontain gold order1">
 			<h5 class="feature-title">Rooms with a View</h5>
-			<p class="feature-description">Das Hotel umfasst 93 elegant ausgestattete Zimmer im 4 Sterne Superior Segment, mit einer Größe von ca. 24 m² bis 30 m², sowie 5 großzügige Juniorsuiten und Suiten mit eigener Terrasse in der 5. Hoteletage.
-Von den über 60 Water-View-Zimmern mit eigenem Balkonschweift der Blick über den Yachthafen raus auf die Außenweser und die Nordsee.</p>		
+				{% if page.url == "/english.html" %}
+   				<p class="feature-description">{{ site.room-eng }}</p>
+				{% else %}
+   				<p class="feature-description">{{ site.room-de }}</p>
+				{% endif %}
 		</div>
 		<div class="featbox flexitem cover waterview order2">
 			<div class="pricebox orangeborder">
@@ -15,12 +18,19 @@ Von den über 60 Water-View-Zimmern mit eigenem Balkonschweift der Blick über d
 		<div class="featbox flexitem cover restaurant order3"></div>
 		<div class="featbox flexitem textcontain blue order4">
 			<h5 class="feature-title">Mulberry Street</h5>
-			<p class="feature-description">Direkt an der Kaje der Auswanderer verwöhnt das Restaurant ‚Mulberry Street‘ die Gäste mit einem vielfältigen Frühstücksbuffet, sowie raffinierter Küche im New York-Stil.
-</p>
+			{% if page.url == "/english.html" %}
+   				<p class="feature-description">{{ site.mulberry-eng }}</p>
+				{% else %}
+   				<p class="feature-description">{{ site.mulberry-de }}</p>
+			{% endif %}
 		</div>
 		<div class="featbox flexitem textcontain grey order5">
 			<h5 class="feature-title">New York Bar</h5>
-			<p class="feature-description">Internationale Drinks, im anspruchsvollen Design, können in der ‚New York‘ Bar in der 5. Etage des Hotels oder, bei schönem Wetter, auf der vorgelagerten Terrasse genossen werden.</p>		
+			{% if page.url == "/english.html" %}
+   				<p class="feature-description">{{ site.bar-eng }}</p>
+				{% else %}
+   				<p class="feature-description">{{ site.bar-de }}</p>
+			{% endif %}
 		</div>
 		<div class="featbox flexitem cover bar order6"></div>
 	</div>

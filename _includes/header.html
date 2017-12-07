@@ -1,8 +1,9 @@
 <header class="header">
+	<a href="{{ site.baseurl}}/english.html"> <img class="english-selector" src="assets/images/english.png" alt="english" width="40px" height="auto"></a>
+	<a href="{{ site.baseurl}}/index.html"> <img class="deutsch-selector" src="assets/images/deutsch.png" alt="german" width="40px" height="auto"></a>
 	<div class="logo-long hidden">
 		<img class="star-logo" src="assets/images/star-hotel-logo.svg" alt="">		
 		<a href="{{ site.baseurl}}/index.html"><img class="logo" src="assets/images/liberty-logo.svg" alt=""></a>
-		
 		<p class="logo-text">Bremerhaven</p>					
 	</div>
 	<div class="logo-block visible">
@@ -10,5 +11,9 @@
 		<a href="{{ site.baseurl}}/index.html"><img class="logo" src="assets/images/liberty-logo.svg" alt="">	</a>
 		<p class="logo-text">Bremerhaven</p>						
 	</div>
-	<img class="eroeffnung" src="assets/images/eroeffnung.png"  width="275px" height="auto" alt="">
+		{% if page.url == "/english.html" %}
+			<img class="eroeffnung" src="assets/images/opening.png"  width="275px" height="auto" alt="">
+		{% else %}
+			<img class="eroeffnung" src="assets/images/eroeffnung.png"  width="275px" height="auto" alt="">
+		{% endif %}
 </header>

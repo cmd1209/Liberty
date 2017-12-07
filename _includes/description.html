@@ -1,6 +1,11 @@
 <section>
 	<div class="description">
-		<p>{{ site.description }}</p>
-		<img class="telephone" src="assets/images/telefon.png"  width="275px" height="auto" alt="">
+		{% if page.url == "/english.html" %}
+   		<p>{{ site.description-eng }}</p>
+			<img class="telephone" src="assets/images/telefon-eng.png"  width="275px" height="auto" alt="">
+		{% else %}
+   		<p>{{ site.description }}</p>
+			<img class="telephone" src="assets/images/telefon.png"  width="275px" height="auto" alt="">
+		{% endif %}
 	</div>
 </section>

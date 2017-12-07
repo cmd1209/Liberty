@@ -4,9 +4,9 @@
 	@media all and (max-width: $screen-l)
 		height: 650px
 	@media all and (max-width: $screen-m)
-		height: 500px
+		height: 100vh
 	@media all and (max-width: $screen-s)
-		height: 400px
+		height: 100vh
 
 .kv01
 	background: url($baseurl + "/assets/images/libertykv01.jpg") center center / cover no-repeat
@@ -16,3 +16,32 @@
 	background: url($baseurl + "/assets/images/libertykv03.jpg") center center / cover no-repeat
 .kv04
 	background: url($baseurl + "/assets/images/libertykv04.jpg") center center / cover no-repeat
+
+.lockup
+	position: absolute
+	text-align: center
+	top: 50%
+	left: 50%
+	transform: translate(-50%, 0)
+	padding: 2em
+	background-color: rgba($dark-grey, 0.5)
+
+	h5
+		color: $gold
+		text-transform: uppercase
+		font-weight: 700
+		letter-spacing: 12px
+		line-height: 1.45em
+		font-size: 1.75em
+		color: $light-grey
+		text-shadow: 0 3px 8px black
+		@media all and (max-width: $screen-s)
+			letter-spacing: 6px
+		span
+			color: $light-grey
+			text-transform: lowercase
+			font-size: 0.65em
+			background-color: $blue
+			padding: 0.165em 0.5em 0.175em 0.4em
+			font-weight: 400
+			text-shadow: none

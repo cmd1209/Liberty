@@ -12,7 +12,7 @@
 		    margin:10,
 		    autoplay:true,
 				animateOut: 'fadeOut',
-		    autoplayTimeout:4000,
+		    autoplayTimeout:8000,
 		    autoplayHoverPause:true,
 				dots: false,
 		});
@@ -23,13 +23,22 @@
 		var logoblock = $('.logo-block');
 		var pricebox = $('.pricebox');
 
-		$window.on('scroll', function(){
-  		var scrollTop = $window.scrollTop();
-  		logolong.toggleClass('popdown', scrollTop > prev);
-  		logoblock.toggleClass('popup', scrollTop > prev);
-  		// pricebox.addClass('priceslide', scrollTop > 850);
-  		prev = scrollTop;
-		});
+
+		if (logoblock.length >= 1) {
+  		$(window).scroll(function() {
+    	var header = $(document).scrollTop();
+    	var headerHeight = $('.logo-block').height();
+    if (header > headerHeight) {
+      logoblock.addClass('popup');
+      logolong.addClass('popdown')
+    } else {
+      logoblock.removeClass('popup');
+      logolong.removeClass('popdown')
+    }
+  });
+}
+
+
 
 	});
 
