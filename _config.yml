@@ -14,14 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: The Liberty Bremerhaven
-email: your-email@domain.com
+email: sales@liberty-bremerhaven.com
 
 description: > # this means to ignore newlines until "baseurl:"
   THE LIBERTY – Bremerhavens neues Themenhotel, das Anfang 2018 eröffnet wurde, liegt an einzigartiger, historischer Stelle am neuen Hafen wo über 7 Millionen Auswanderer Europa verließen und Ihr Glück in der neuen Welt suchten.
   Das luxuriöse, moderne und elegante Ambiente des 4 Sterne SUPERIOR Hotels, wird  ein weiterer Anziehungspunkt in der Seestadt Bremerhaven sein.
 
 description-eng: > # this means to ignore newlines until "baseurl:"
-  THE LIBERTY- Bremerhaven's new theme hotel, which will open in early 2018, is located in a unique, historic spot on the “neuen Hafen” where more than 7 million emigrants left Europe seeking their fortune in the New World. The luxurious, modern and elegant ambience of the 4 star SUPERIOR Hotel will be another attraction in the seaside town of Bremerhaven.
+  The Liberty, which will open in early 2018, is located in a unique, historic spot on the “neuen Hafen” where more than 7 million emigrants left Europe seeking their fortune in the New World. The luxurious, modern and elegant ambience of the 4 star SUPERIOR Hotel will be another attraction in the seaside town of Bremerhaven.
 
 room-de: > # this means to ignore newlines until "baseurl:"
   Das Hotel umfasst 93 elegant ausgestattete Zimmer im 4 Sterne Superior Segment, mit einer Größe von ca. 24 m² bis 30 m², sowie 5 großzügige Juniorsuiten und Suiten mit eigener Terrasse in der 5. Hoteletage. Von den über 60 Water-View-Zimmern mit eigenem Balkonschweift der Blick über den Yachthafen raus auf die Außenweser und Nordsee.
@@ -31,7 +31,7 @@ room-eng: > # this means to ignore newlines until "baseurl:"
 
 
 mulberry-de: > # this means to ignore newlines until "baseurl:"
-  Direkt an der Kaje der Auswanderer verwöhnt das Restaurant ‚Mulberry Street‘ die Gäste mit einem vielfältigen Frühstücksbuffet, sowie raffinierter und feiner Küche im New York-Stil.
+  Direkt an der Kaje der Auswanderer verwöhnt das Restaurant ‚Mulberry Street‘ die Gäste mit einem vielfältigen Frühstücksbuffet, sowie raffinierter und feiner Küche im New York-Style.
 
 mulberry-eng: > # this means to ignore newlines until "baseurl:"
   Direct on the emigration quay, the 'Mulberry Street' restaurant pampers guests with an ample breakfast buffet, as well as refined and fine New York-style cuisine.
@@ -43,8 +43,8 @@ bar-eng: > # this means to ignore newlines until "baseurl:"
   International drinks and signature cocktails can be enjoyed at the New York Bar on the 5th floor of the hotel or, if the weather is nice, on the large terrace outside.
 
 
-baseurl: "/tester" # the subpath of your site, e.g. /blog
-url: "http://www.libertybremerhaven.de/tester/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.libertybremerhaven.de" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 

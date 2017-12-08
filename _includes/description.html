@@ -1,11 +1,13 @@
 <section>
 	<div class="description">
 		{% if page.url == "/english.html" %}
+			<h2 class="intro">Bremerhaven's new theme hotel</h2>
    		<p>{{ site.description-eng }}</p>
-			<img class="telephone" src="assets/images/telefon-eng.png"  width="275px" height="auto" alt="">
+   		<h2 class="contact">Telephone: +49 417 90 22 40</h2>
 		{% else %}
+			<h2 class="intro">Bremerhavens neues Themenhotel</h2>
    		<p>{{ site.description }}</p>
-			<img class="telephone" src="assets/images/telefon.png"  width="275px" height="auto" alt="">
+   		<h2 class="contact">Telefon: 0417 / 90 22 40</h2>
 		{% endif %}
 	</div>
 </section>
