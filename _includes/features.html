@@ -1,10 +1,11 @@
 <section class="features">
 	<div class="flexrow">
 		<div class="featbox flexitem textcontain gold order1">
-			<h5 class="feature-title">Rooms with a View</h5>
 				{% if page.url == "/english.html" %}
+					<h5 class="feature-title">Rooms</h5>
    				<p class="feature-description">{{ site.room-eng }}</p>
 				{% else %}
+					<h5 class="feature-title">Zimmer</h5>
    				<p class="feature-description">{{ site.room-de }}</p>
 				{% endif %}
 		</div>
