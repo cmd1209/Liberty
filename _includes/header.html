@@ -1,19 +1,20 @@
 <header class="header">
-	<a href="{{ site.baseurl}}/english.html"> <img class="english-selector" src="assets/images/english.png" alt="english" width="40px" height="auto"></a>
-	<a href="{{ site.baseurl}}/index.html"> <img class="deutsch-selector" src="assets/images/deutsch.png" alt="german" width="40px" height="auto"></a>
-	<div class="logo-long hidden">
-		<img class="star-logo" src="assets/images/star-hotel-logo.svg" alt="">		
-		<a href="{{ site.baseurl}}/index.html"><img class="logo" src="assets/images/liberty-logo.svg" alt=""></a>
-		<p class="logo-text">Bremerhaven</p>					
-	</div>
 	<div class="logo-block visible">
-		<img class="star-logo" src="assets/images/star-hotel-logo.svg" alt="">
 		<a href="{{ site.baseurl}}/index.html"><img class="logo" src="assets/images/liberty-logo.svg" alt="">	</a>
 		<p class="logo-text">Bremerhaven</p>						
 	</div>
-		{% if page.url == "/english.html" %}
-			<h2 class="eroeffnung">Opening<br>February 9th 2018</h2>
-		{% else %}
-			<h2 class="eroeffnung">Eröffnung<br>9. Februar 2018</h2>
-		{% endif %}
+	<nav class="nav">
+		<ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Rooms</a></li>
+			<li><a href="#">Mulberry ST</a></li>
+			<li><a href="#">New York Bar</a></li>
+			<li><a href="#">The Upper West</a></li>
+			<li><a href="#">Miami Spa</a></li>
+			<li><a href="#">Bremerhaven</a></li>
+		</ul>
+	</nav>
 </header>
+
+<!-- 	<a href="{{ site.baseurl}}/english.html"> <img class="english-selector" src="assets/images/english.png" alt="english" width="40px" height="auto"></a>
+	<a href="{{ site.baseurl}}/index.html"> <img class="deutsch-selector" src="assets/images/deutsch.png" alt="german" width="40px" height="auto"></a> -->

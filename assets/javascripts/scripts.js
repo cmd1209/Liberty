@@ -5,8 +5,7 @@
 
 		// DOM ready, take it away
 
-		var owl = $('.owl-carousel');
-		owl.owlCarousel({
+		$('.owl-one').owlCarousel({
 		    items:1,
 		    loop:true,
 		    margin:10,
@@ -17,9 +16,22 @@
 				dots: false,
 		});
 
+		$('.owl-two').owlCarousel({
+		    items:1,
+		    loop:true,
+		    margin:10,
+		    autoplay:false,
+				animateOut: 'fadeOut',
+		    autoplayTimeout:2000,
+		    autoplayHoverPause:true,
+				dots: true,
+				nav: true,
+		});
+
+
 		var prev = 0;
 		var $window = $(window);
-		var logolong = $('.logo-long');
+		var nav = $('.nav');
 		var logoblock = $('.logo-block');
 		var pricebox = $('.pricebox');
 
@@ -30,10 +42,10 @@
     	var headerHeight = $('.logo-block').height();
     if (header > headerHeight) {
       logoblock.addClass('popup');
-      logolong.addClass('popdown')
+      nav.addClass('fixed')
     } else {
       logoblock.removeClass('popup');
-      logolong.removeClass('popdown')
+      nav.removeClass('fixed')
     }
   });
 }

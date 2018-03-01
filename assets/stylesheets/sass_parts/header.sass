@@ -48,33 +48,26 @@
 		// transform: skewY(0) translateX(50%)
 		// text-align: center 
 		// display: none
-
+header.header
+	display: flex
+	flex-flow: column wrap
+	align-items: center
+	justify-content: space-between
+	width: 100%
+	height: 180px
+	background-color: white
 .logo-block
 	display: flex
 	flex-flow: column wrap
 	align-items: center
 	justify-content: center
-	width: 315px
-	background: url($baseurl + "/assets/images/spiration-light.png") repeat
-	border-left: 2px solid $gold
-	border-right: 2px solid $gold
-	border-bottom: 2px solid $gold
-	padding: 2em 2em 1.25em 2em
-	position: absolute
-	left: 50%
-	top: 0
-	transform: translateX(-50%)
 	z-index: 100
 	transition: transform 0.5s ease-in-out
-	@media all and (max-width: $screen-m)
-		width: 205px
-		padding: 1em
 	.logo
-		width: 300px
+		margin-top: 37px
+		width: 375px
 		height: auto
 		flex: 1
-		@media all and (max-width: $screen-m)
-			width: 195px
 	.star-logo
 		flex-basis: 20%
 		width: 100px
@@ -84,7 +77,7 @@
 			width: 85px
 			margin: 0 0 1em 0 
 	.logo-text
-		margin: 1.6em 0 0 0 
+		margin: 1em 0 0 0 
 		color: $gold
 		text-transform: uppercase
 		font-size: 80%
@@ -124,8 +117,10 @@
 		@media all and (max-width: $screen-s)
 			margin: 0 1em
 			display: none 
-
+.fixed
+	position: fixed
+	border-bottom: 2px solid $red
 .popdown
 	transform: translateY(0)
 .popup
-	transform: translate(-50%, -100%)
+	transform: translate(0%, -100%)
