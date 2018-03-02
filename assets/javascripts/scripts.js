@@ -20,12 +20,11 @@
 		    items:1,
 		    loop:true,
 		    margin:10,
-		    autoplay:false,
-				animateOut: 'fadeOut',
+		    autoplay:true,
 		    autoplayTimeout:2000,
 		    autoplayHoverPause:true,
 				dots: true,
-				nav: true,
+				nav: false,
 		});
 
 
