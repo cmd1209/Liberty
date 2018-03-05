@@ -28,28 +28,22 @@
 		});
 
 
-		var prev = 0;
-		var $window = $(window);
-		var nav = $('.nav');
-		var logoblock = $('.logo-block');
-		var pricebox = $('.pricebox');
+$(window).scroll(function(){
+	var header = $('.header');
+  var nav = $('.nav');
+  scroll = $(window).scrollTop();
 
+  if (scroll >= 141) 
+  	nav.addClass('fixed'),
+  	header.addClass('header-add');
+  else 
+  	nav.removeClass('fixed'),
+  	header.removeClass('header-add');
+});
 
-		if (logoblock.length >= 1) {
-  		$(window).scroll(function() {
-    	var header = $(document).scrollTop();
-    	var headerHeight = $('.logo-block').height();
-    if (header > headerHeight) {
-      logoblock.addClass('popup');
-      nav.addClass('fixed')
-    } else {
-      logoblock.removeClass('popup');
-      nav.removeClass('fixed')
-    }
-  });
-}
-
-
+$('.menuactivator').click(function(){
+			$('.nav-mobile').toggleClass('hidden visible');
+});
 
 	});
 

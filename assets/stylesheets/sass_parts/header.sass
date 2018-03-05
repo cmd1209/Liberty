@@ -1,19 +1,13 @@
 
 .english-selector
-	position: absolute
-	right: 0
-	top: 0
-	width: 40px
+	width: 20px
 	height: auto
 	z-index: 98
 	background-color: white
 	@media all and (max-width: $screen-s)
 		width: 32px
 .deutsch-selector
-	position: absolute
-	right: 45px
-	top: 0
-	width: 40px
+	width: 20px
 	height: auto
 	z-index: 98
 	background-color: white
@@ -21,46 +15,39 @@
 		width: 32px
 		top: 22px
 		right: 0
-.eroeffnung
-	position: absolute
-	top: 50px
-	right: -2px
-	z-index: 98
-	color: $gold
-	text-align: right
-	text-transform: uppercase
-	letter-spacing: 4px
-	line-height: 1.1em
-	font-size: 24px
-	padding: 0.5em 0.75em 0.5em 1em
-	background-color: $light-grey
-	border: 2px solid $gold
-	transform: skewY(-5deg)
-	@media all and (max-width: $screen-m)
-		padding: 0.3em 0.6em 0.3em 0.7em
-		font-size: 22px
-		letter-spacing: 2px
-		top: 50px
-		height: auto
-	@media all and (max-width: $screen-s)
-		display: none
-		// right: 50%
-		// transform: skewY(0) translateX(50%)
-		// text-align: center 
-		// display: none
+
 header.header
-	display: flex
-	flex-flow: column wrap
-	align-items: center
-	justify-content: space-between
+	// position: fixed
+	// top: 0
+	// left: 0
+	// z-index: 999
 	width: 100%
-	height: 180px
 	background-color: white
+
+.flex-center
+	justify-content: center
+.flex-wrap
+	flex-wrap: wrap
+
+.action-block
+	flex: 1
+	padding: 1em 0 0 0
+	text-align: right
+	@media all and (max-width: $screen-s)
+		display: none  
+.lang-block
+	padding: 1em 0 0 0
+	flex: 1
+	@media all and (max-width: $screen-s)
+		display: none 
+
 .logo-block
+	flex: 1
 	display: flex
 	flex-flow: column wrap
 	align-items: center
 	justify-content: center
+	margin-bottom: 25px
 	z-index: 100
 	transition: transform 0.5s ease-in-out
 	.logo
@@ -68,6 +55,8 @@ header.header
 		width: 375px
 		height: auto
 		flex: 1
+		@media all and (max-width: $screen-m)
+			width: 275px
 	.star-logo
 		flex-basis: 20%
 		width: 100px
@@ -119,7 +108,10 @@ header.header
 			display: none 
 .fixed
 	position: fixed
+	top: 0
 	border-bottom: 2px solid $red
+.header-add
+	padding: 0 0 42px 0
 .popdown
 	transform: translateY(0)
 .popup

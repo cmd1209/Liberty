@@ -1,7 +1,21 @@
 <header class="header">
-	<div class="logo-block visible">
-		<a href="{{ site.baseurl}}/index.html"><img class="logo" src="assets/images/liberty-logo.svg" alt="">	</a>
-		<p class="logo-text">Bremerhaven</p>						
+	<div class="wrapper">
+		<a href="#" class="menuactivator">menu</a>
+		<div class="flex-cont flex-center flex-wrap">
+			<div class="lang-block">
+					<a href="{{ site.baseurl}}/english.html"> <img class="english-selector" src="assets/images/english.png" alt="english" width="40px" height="auto"></a>
+	<a href="{{ site.baseurl}}/index.html"> <img class="deutsch-selector" src="assets/images/deutsch.png" alt="german" width="40px" height="auto"></a>
+				
+			</div>
+			<div class="logo-block">
+				<a href="{{ site.baseurl}}/index.html"><img class="logo" src="assets/images/liberty-logo.svg" alt="">	</a>
+				<p class="logo-text">Bremerhaven</p>		
+			</div>
+			<div class="action-block">
+				<a href="#" class="btn book-btn">Book a Room</a>
+				
+			</div>
+		</div>
 	</div>
 	<nav class="nav">
 		<ul>
@@ -14,7 +28,20 @@
 			<li><a href="#">Bremerhaven</a></li>
 		</ul>
 	</nav>
-</header>
+	<nav class="nav-mobile hidden">
 
-<!-- 	<a href="{{ site.baseurl}}/english.html"> <img class="english-selector" src="assets/images/english.png" alt="english" width="40px" height="auto"></a>
-	<a href="{{ site.baseurl}}/index.html"> <img class="deutsch-selector" src="assets/images/deutsch.png" alt="german" width="40px" height="auto"></a> -->
+		<ul>
+			<li>
+				<a href="{{ site.baseurl}}/index.html"><img class="menu-logo" src="assets/images/liberty-logo-neg.svg" alt="">	</a>
+			</li>
+			<li><a href="#">Book a Room</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Rooms</a></li>
+			<li><a href="#">Mulberry ST</a></li>
+			<li><a href="#">New York Bar</a></li>
+			<li><a href="#">The Upper West</a></li>
+			<li><a href="#">Miami Spa</a></li>
+			<li><a href="#">Bremerhaven</a></li>
+		</ul>
+	</nav>
+</header>
