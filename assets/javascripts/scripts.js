@@ -21,7 +21,7 @@
 		    loop:true,
 		    margin:0,
 		    autoplay:true,
-		    autoplayTimeout:2000,
+		    autoplayTimeout:6000,
 		    autoplayHoverPause:true,
 				dots: true,
 				nav: false,
@@ -32,19 +32,34 @@
 		$('.mobile-cont').toggleClass('hidden visible');
 		});
 
-
 $(window).scroll(function(){
-	var header = $('.header');
-  var nav = $('.nav');
+  var nav = $('.normal-navigation');
   scroll = $(window).scrollTop();
 
   if (scroll >= 141) 
-  	nav.addClass('fixed'),
-  	header.addClass('header-add');
+  	nav.addClass('shadow');
+
   else 
-  	nav.removeClass('fixed'),
-  	header.removeClass('header-add');
+  	nav.removeClass('shadow');
+
 });
+
+
+// $(window).scroll(function(){
+// 	var header = $('.header');
+//   var nav = $('.nav');
+//   scroll = $(window).scrollTop();
+
+//   if (scroll >= 141) 
+//   	nav.addClass('fixed'),
+//   	header.addClass('header-add');
+//   else 
+//   	nav.removeClass('fixed'),
+//   	header.removeClass('header-add');
+// });
+
+
+
 
 
 	});

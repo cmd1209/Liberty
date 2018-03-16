@@ -1,11 +1,8 @@
 ---
-layout: page
+layout: rooms
 title: Rooms
 category: page
 permalink: /rooms/
 ---
 
-Mitten in Downtown Manhattan liegt die Mulberry Street, eine der ältesten Straßen New Yorks. Die Straße ist geprägt durch das Quartier 
-Little Italy im Norden und Chinatown im Süden. Kaum ein anderer Ort steht mehr für das Zusammenleben unterschiedlicher Kulturen und die Vielfalt der Speisen wie die Mulberry Street.
-
-MULBERRY ST, das Restaurant im THE LIBERTY wird ab 10. März 2018 in seinen Menus diese Vielfalt leben. Kulinarische Kompositionen, ländlich, mediterran mit asiatischen Nuancen: Freuen Sie sich darauf.
+Das Hotel umfasst 93 elegant ausgestattete Zimmer im 4 Sterne Superior Segment, mit einer Größe von ca. 24 m² bis 30 m², sowie 5 großzügige Juniorsuiten und Suiten mit eigener Terrasse in der 5. Hoteletage. Von den über 60 Water-View-Zimmern mit eigenem Balkon schweift der Blick über den Yachthafen raus auf die Außenweser und Nordsee.

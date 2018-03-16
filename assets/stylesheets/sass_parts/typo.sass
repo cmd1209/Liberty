@@ -1,20 +1,24 @@
 // @import url('https://fonts.googleapis.com/css?family=Arimo:400,700')
 // @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700')
 @import url('https://fonts.googleapis.com/css?family=Overpass:300,400,700,900')
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700')
 
 // $basefont: 'Arimo', sans-serif
 // $basefont: 'Source Sans Pro', sans-serif
 $basefont: 'Overpass', sans-serif
-$baseFS: 1rem
-$baseLH: calc(#{$baseFS}*1.4)
+// $basefont: 'Open Sans', sans-serif
+$baseFS: 0.94rem
+$baseLH: calc(#{$baseFS}*1.45)
 
 body
 	font-size: $baseFS
 	line-height: $baseLH
+	font-weight: 400
 
 a
 	font-family: $basefont
 	text-decoration: none
+	font-weight: 700
 
 h1, h2, h3, h4, h5, h6
 	font-family: $basefont
@@ -37,3 +41,9 @@ h5
 	font-size: 1.33rem
 h6
 	font-size: 1.25rem
+
+span
+	font-size: 75%
+	text-transform: lowercase
+	font-weight: 300
+	margin: 0 4px 0 0

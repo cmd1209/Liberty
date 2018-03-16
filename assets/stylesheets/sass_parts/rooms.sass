@@ -1,0 +1,64 @@
+.col100
+	flex-basis: 100%
+	margin: 0 0 1em 0
+.col50
+	position: relative
+	flex: 1
+	@media all and (max-width: $screen-s)
+		flex-basis: 100%
+.col66
+	flex-basis: 66.666%
+.col33
+	flex-basis: 33.333%
+.colL
+	padding: 0 0.5em 0 0
+	@media all and (max-width: $screen-s)
+		padding: 0 0 1em 0
+		text-align: center
+.colR
+	padding: 0 0 0 0.5em
+	@media all and (max-width: $screen-s)
+		padding: 0 0 1em 0
+		text-align: center
+.room
+	padding: 2em 0
+.room-image
+	height: 250px
+.room-image-doub
+	height: 500px
+.grey
+	background-color: $light-grey
+	border-top: 1px solid darken( $light-grey, 5% )
+	border-bottom: 1px solid darken( $light-grey, 5% )
+.room
+	h4, p
+		margin: 0 0 1em 0
+		color: $red
+		@media all and (max-width: $screen-s)
+			padding: 0 1em
+			text-align: center
+.room-price
+	position: absolute
+	font-size: 24px
+	bottom: 0
+	left: 0
+	padding: 0.5em 1.5em
+	&.nudgeR
+		left: 0.5em
+	span
+		font-size: 75%
+		text-transform: lowercase
+		font-weight: 300
+		margin: 0 4px 0 0
+	@media all and (max-width: $screen-s)
+		font-size: 18px
+		position: relative
+		display: inline
+		padding: 4px 8px
+.more
+	color: $red
+	border: 1px solid darken( $light-grey, 5% )
+	padding: 4px 8px
+	background-color: $light-grey
+	border-radius: 2px
+	margin: 1em 0
