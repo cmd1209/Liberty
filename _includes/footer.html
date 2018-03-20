@@ -2,9 +2,17 @@
 		<div class="logo-wrapper">
 			<a href="{{ site.baseurl}}/index.html"><img class="footer-logo" src="{{ site.baseurl}}/assets/images/liberty-logo-neg.svg" alt=""></a>
 		</div>
-		<nav class="footernav">
-		{% include nav.html %}
-	</nav>
+					<nav class="footernav">
+				{% if page.url == "/english.html"  %}
+					{% include footer-nav-eng.html %}
+				{% elsif page.url == "/rooms.html"  %}
+					{% include footer-nav-eng.html %}
+				{% else %}
+					{% include footer-nav-de.html %}
+				{% endif %}
+			</nav>
+
+
 		<p>Liberty Hotel Bremerhaven GmbH</p>
 <p>Columbusstrasse 67 | 27568 Bremerhaven</p>
 <p>Telefon: 0471 / 90 22 40</p>

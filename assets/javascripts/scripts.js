@@ -32,6 +32,10 @@
 		$('.mobile-cont').toggleClass('hidden visible');
 		});
 
+		$('.more').click(function(){
+		$(this).next('.infobox').slideToggle(150);
+		});
+
 $(window).scroll(function(){
   var nav = $('.normal-navigation');
   scroll = $(window).scrollTop();

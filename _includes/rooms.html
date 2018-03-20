@@ -1,13 +1,9 @@
 <section class="rooms">
 	<div class="wrapper">
 		<div class="description">
-		{% if page.url == "/english.html" %}
-   		<p>Das Hotel umfasst 93 elegant ausgestattete Zimmer im 4 Sterne Superior Segment, mit einer Größe von ca. 24 m² bis 30 m², sowie 5 großzügige Juniorsuiten und Suiten mit eigener Terrasse in der 5. Hoteletage. Von den über 60 Water-View-Zimmern mit eigenem Balkon schweift der Blick über den Yachthafen raus auf die Außenweser und Nordsee.</p>
-		{% else %}
-   		<p>Das Hotel umfasst 93 elegant ausgestattete Zimmer im 4 Sterne Superior Segment, mit einer Größe von ca. 24 m² bis 30 m², sowie 5 großzügige Juniorsuiten und Suiten mit eigener Terrasse in der 5. Hoteletage. Von den über 60 Water-View-Zimmern mit eigenem Balkon schweift der Blick über den Yachthafen raus auf die Außenweser und Nordsee.</p>
-		{% endif %}
+   		<p>The hotel comprises of 93 elegantly crafted rooms in the 4-star superior segment, with a size of approx. 24 m² to 30 m², as well as 5 spacious junior suites and suites with their own terrace on the 5th floor of the hotel. From the more than 60 Water View rooms with their own balcony, the view over the marina out to the outer Weser and North Sea.</p>
 	</div>
-{% include roomslideshow.html %}
+{% include roomsslideshow.html %}
 </div>
 	<div class="room grey">
 		<div class="wrapper">
@@ -17,9 +13,13 @@
 				</div>
 				<div class="col50 colR">
 					<h4 class="uppercase">City-View Rooms</h4>
-					<p>Entspannen Sie in unseren komfortablen City-View Zimmern (ca. 24m²), in ruhiger Lage mit Blick ins Zentrum Bremerhavens.</p>
-					<a href="javascript:void(0)" class="more">mehr info</a>
-					<a href="https://www.cbooking.de/v4/booking.aspx?id=theliberty&module=public&ratetype=bar&lang=de" class="btn room-price nudgeR" target="_blank"><span>ab</span>128,00 EUR</a>				
+
+					<p>Relax in a comfortable City-View Room (ca. 24m²), with a view of Bremerhaven's center.</p>
+					<a href="javascript:void(0)" class="more">more info</a>
+					<div class="infobox">
+						<p><strong>Furnishings:</strong> double bed, seating accommodation, bathroom with shower, hair dryer, air conditioner, flat-screen TV, free Wifi, telephone, safe, 1 bottle of mineral water (0.75l) for your refreshment, coffee / tea station, minibar</p>
+					</div>				
+					<a href="https://www.cbooking.de/v4/booking.aspx?id=theliberty&module=public&ratetype=bar&lang=de" class="btn room-price nudgeR" target="_blank"><span>from</span>128.00 EUR</a>
 				</div>
 			</div>	
 		</div>
@@ -29,9 +29,12 @@
 			<div class="flex-cont">
 				<div class="col50 colL">
 					<h4 class="uppercase">Water-Views Rooms</h4>
-					<p>Entspannen Sie in unseren eleganten Water-View Zimmern (ca. 24m²) mit wundervollen Blick auf die Weser und Nordsee.</p>
-					<a href="javascript:void(0)" class="more">mehr info</a>
-					<a href="https://www.cbooking.de/v4/booking.aspx?id=theliberty&module=public&ratetype=bar&lang=de" class="btn room-price" target="_blank" ><span>ab</span>148,00 EUR</a>				
+					<p>Relax in our elegant Water-View room (ca. 24m²) with a wonderful view of the river Weser and the North Sea.</p>
+					<a href="javascript:void(0)" class="more">more info</a>
+					<div class="infobox">
+						<p><strong>Furnishings:</strong> balcony, panorama window, double bed, seating accommodation, bathroom with shower, hair dryer, air conditioner, flat-screen TV, free Wifi,	telephone, safe, 1 bottle of mineral water (0.75l) for your refreshment, coffee / tea station, minibar</p>
+					</div>
+					<a href="https://www.cbooking.de/v4/booking.aspx?id=theliberty&module=public&ratetype=bar&lang=de" class="btn room-price" target="_blank" ><span>from</span>148.00 EUR</a>				
 				</div>
 				<div class="col50 colR">
 					<div class="room-image wv01"></div>			
@@ -47,9 +50,12 @@
 				</div>
 				<div class="col50 colR">
 					<h4 class="uppercase">Water-View Superior</h4>
-					<p>Genießen Sie unsere eleganten Superior-Zimmer (ca. 30m²), direkt in der Rundung des Hotels und mit einem wundervollen Blick auf die Weser und Nordsee.</p>
-					<a href="javascript:void(0)" class="more">mehr info</a>
-					<a href="https://www.cbooking.de/v4/booking.aspx?id=theliberty&module=public&ratetype=bar&lang=de" class="btn room-price nudgeR" target="_blank"><span>ab</span>168,00 EUR</a>				
+					<p>Enjoy our elegant superior rooms (approx. 30m²), located in the curve of the hotel and with a wonderful view of the river Weser and the North Sea. </p>
+					<a href="javascript:void(0)" class="more">more info</a>
+					<div class="infobox">
+						<p><strong>Furnishings:</strong> balcony, panorama window, double bed, seating accommodation, bathroom with shower, hair dryer, air conditioner, flat-screen TV, free Wifi, telephone, safe, 1 bottle of mineral water (0.75l) for your refreshment, coffee / tea station, minibar</p>
+					</div>
+					<a href="https://www.cbooking.de/v4/booking.aspx?id=theliberty&module=public&ratetype=bar&lang=de" class="btn room-price nudgeR" target="_blank"><span>from</span>168.00 EUR</a>				
 				</div>
 			</div>	
 		</div>
@@ -60,11 +66,14 @@
 			<div class="flex-cont">
 				<div class="col50 colL">
 					<h4 class="uppercase">Juniorsuite</h4>
-					<p>Genießen Sie eine unserer eleganten Juniorsuiten in der 5. Etage, mit dem höchsten und besten Blick auf die Weser und Nordsee.</p>
-					<a href="javascript:void(0)" class="more">mehr info</a>					
+					<p>Enjoy one of our elegant junior suites on the 5th floor, with the highest and best view of the Weser and North Sea.</p>
+					<a href="javascript:void(0)" class="more">more info</a>
+					<div class="infobox">
+						<p><strong>Furnishings:</strong> balcony, panorama window, double bed, seating accommodation, bathroom with shower, hair dryer, air conditioner, flat-Screen TV, free Wifi, telephone, Safe, 1 bottle of mineral water (0.75l) for your refreshment, coffee / tea station, minibar</p>
+					</div>					
 				</div>
 				<div class="col50 colR">
-					<a href="https://www.cbooking.de/v4/booking.aspx?id=theliberty&module=public&ratetype=bar&lang=de" class="btn room-price" target="_blank"><span>ab</span>198,00 EUR</a>	
+					<a href="https://www.cbooking.de/v4/booking.aspx?id=theliberty&module=public&ratetype=bar&lang=de" class="btn room-price" target="_blank"><span>from</span>198.00 EUR</a>	
 				</div>
 			</div>
 		</div>
@@ -73,12 +82,15 @@
 		<div class="wrapper">
 			<div class="flex-cont extra-pad">
 				<div class="col50 colL">
-					<a href="https://www.cbooking.de/v4/booking.aspx?id=theliberty&module=public&ratetype=bar&lang=de" class="btn room-price" target="_blank"><span>ab</span>248,00 EUR</a>	
+					<a href="https://www.cbooking.de/v4/booking.aspx?id=theliberty&module=public&ratetype=bar&lang=de" class="btn room-price" target="_blank"><span>from</span>248.00 EUR</a>	
 				</div>
 				<div class="col50 colR">
 					<h4 class="uppercase">Suite</h4>
-					<p>Genießen Sie unsere eleganten und großzügigen Suiten (27-40m²) in der 5. Etage, mit einem grandiosen Blick auf die Weser und Nordsee. </p>
-					<a href="javascript:void(0)" class="more">mehr info</a>
+					<p>Enjoy our elegant and spacious suites (27-40m²) on the 5th floor, with a sublime view of the river Weser and the North Sea.</p>
+					<a href="javascript:void(0)" class="more">more info</a>
+					<div class="infobox">
+						<p><strong>Furnishings:</strong> balcony, panorama window, double bed, seating accommodation, bathroom with shower (3 of them with a bathtub in addition), hair dryer, air conditioner, flat-screen TV, free Wifi, telephone, safe, 1 bottle of mineral water (0.75l) for your refreshment, 1 bottle of prosecco (0.5l) as a gift of us, coffee / tea station, minibar, daily newspaper free of charge</p>
+					</div>
 				</div>
 			</div>
 			<div class="flex-cont">

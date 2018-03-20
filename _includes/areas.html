@@ -1,6 +1,11 @@
 <section class="features">
 	<div class="wrapper">
-		{% include roomslideshow.html %}
+				{% if page.url == "/english.html"  %}
+					{% include roomsslideshow.html %}
+				{% else %}
+					{% include zimmerslideshow.html %}
+				{% endif %}
+
 		<div class="flex-cont">
 			<div class="area">
 				<div class="area-image area-bg-01">	
@@ -10,7 +15,7 @@
 				</div>
 			</div>
 			<div class="area">
-				<div class="area-image area-bg-02">	
+				<div class="area-image area-mulberrykv02">	
 				</div>
 				<div class="area-logo-cont">
 					<a href="http://www.mulberry-bremerhaven.de" target="_blank"><img class="area-logo" src="{{site.baseurl }}/assets/images/mulberry-st-logo.svg" alt="Mulberry Restaurant Bremerhaven"></a>
