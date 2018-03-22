@@ -4,7 +4,7 @@ nav.normal-navigation
   top: 0
   background-color: rgba(white,0.9)
   border-top: 1px solid $medium-grey
-  border-bottom: 1px solid $medium-grey
+  // border-bottom: 1px solid $medium-grey
   display: flex
   justify-content: center
   width: 100%
@@ -24,8 +24,8 @@ nav.normal-navigation
         color: white!important
         background-color: $red
     & a.active
-      color: white
-      background-color: $red
+        color: white!important
+        background-color: $red!important
 
 .mobile-cont
   background-color: rgba($red,0.95)
@@ -74,7 +74,7 @@ nav.mobile-navigation
   width: 278px
   margin: 1em 0
   @media all and (max-width: $screen-s)
-    width: 230px
+    width: 180px
 
 #menu-icon
   width: 30px

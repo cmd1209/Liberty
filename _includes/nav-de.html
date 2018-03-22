@@ -1,26 +1,29 @@
 <nav class="normal-navigation">
 	<ul>
 			<li><a href="{{site.baseurl }}/#info">Info</a></li>
-			<li><a {% if page.url == "/zimmer/" %}class="active"{% endif %} href="/zimmer/">Zimmer</a></li>
+			<li><a {% if page.url == "/zimmer.html" %}class="active"{% endif %} href="/zimmer/">Zimmer</a></li>
 			<li><a href="http://www.mulberry-bremerhaven.de" target="_blank">Mulberry ST</a></li>
-			<li><a href="#">New York Bar</a></li>
-			<li><a href="#">The Upper West</a></li>
-			<li><a href="#">Miami Spa</a></li>
-			<li><a {% if page.url == "/bremerhaven/" %}class="active"{% endif %} href="/bremerhaven/">Bremerhaven</a></li>
-	</ul>
-</nav>
-<div class="mobile-cont hidden">
-	<a href="{{ site.baseurl}}/index.html"><img class="menu-logo" src="{{site.baseurl }}/assets/images/liberty-logo-bh-neg.svg" alt="">	</a>
-	<nav class="mobile-navigation">
-		<ul>
-			<li><a href="{{site.baseurl }}/#info">Info</a></li>
-			<li><a {% if page.url == "/zimmer/" %}class="active"{% endif %} href="/zimmer/">Zimmer</a></li>
-			<li><a href="http://www.mulberry-bremerhaven.de" target="_blank">Mulberry ST</a></li>
-			<li><a href="#">New York Bar</a></li>
-			<li><a href="#">The Upper West</a></li>
-			<li><a href="#">Miami Spa</a></li>
-			<li><a {% if page.url == "/bremerhaven/" %}class="active"{% endif %} href="/bremerhaven/">Bremerhaven</a></li>
+			<li><a {% if page.url == "/nybar-de.html" %}class="active"{% endif %} href="/nybar-de/">New York Bar</a></li>
+			<li><a {% if page.url == "/upperwest-de.html" %}class="active"{% endif %} href="/upperwest-de/">The Upper West</a></li>
+			<li><a {% if page.url == "/miami-de.html" %}class="active"{% endif %} href="/miami-de/">Miami Spa</a></li>
+			<li><a {% if page.url == "/bremerhaven-de.html" %}class="active"{% endif %} href="/bremerhaven-de/">Bremerhaven</a></li>
+		</ul>
+	</nav>
+	<div class="mobile-cont hidden">
+		<a href="{{ site.baseurl}}/index.html"><img class="menu-logo" src="{{site.baseurl }}/assets/images/liberty-logo-bh-neg.svg" alt="">	</a>
+		<nav class="mobile-navigation">
+			<ul>
+				<li><a href="{{site.baseurl }}/#info">Info</a></li>
+				<li><a {% if page.url == "/zimmer.html" %}class="active"{% endif %} href="/zimmer/">Zimmer</a></li>
+				<li><a href="http://www.mulberry-bremerhaven.de" target="_blank">Mulberry ST</a></li>
+				<li><a {% if page.url == "/nybar-de/" %}class="active"{% endif %} href="/nybar-de/">New York Bar</a></li>
+			<li><a {% if page.url == "/upperwest-de.html" %}class="active"{% endif %} href="/upperwest-de/">The Upper West</a></li>
+			<li><a {% if page.url == "/miami-de.html" %}class="active"{% endif %} href="/miami-de/">Miami Spa</a></li>
+			<li><a {% if page.url == "/bremerhaven-de.html" %}class="active"{% endif %} href="/bremerhaven-de/">Bremerhaven</a></li>
 	</ul>
 	</nav>
 </div>
+
+
+
 

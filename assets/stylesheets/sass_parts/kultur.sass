@@ -1,0 +1,75 @@
+.kultur
+  background-color: black
+  color: white
+  p
+    color: white
+  h1,h2,h3,h4,h5,h6
+    color: white
+  img
+    max-width: 100%
+    width: 100%
+.grid
+  display: grid
+  grid-gap: 10px
+  grid-template-columns: 1fr 1fr 1fr
+  grid-template-rows: auto
+  @media all and (max-width: $screen-s)
+    text-align: center
+    grid-template-columns: 100%
+.subgrid
+  box-sizing: border-box
+  display: grid
+  grid-gap: 0px
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: auto
+  @media all and (max-width: $screen-s)
+    text-align: center
+    grid-template-columns: 100%
+.span1-3
+  grid-column-start: 1
+  grid-column-end: 3
+  @media all and (max-width: $screen-s)
+    grid-column-end: 2
+.span2-4
+  grid-column-start: 2
+  grid-column-end: 4
+  @media all and (max-width: $screen-s)
+    grid-column-start: 1
+    grid-column-end: 2
+
+.grid2
+  width: 100%
+  display: grid
+  grid-gap: 10px
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: auto
+
+// backgrounds
+
+.bg-image
+  width: 100%
+  height: 235px
+  margin: 0 0 0.5em 0
+.bg-image-cut
+  @media all and (max-width: $screen-s)
+    display: none
+.bhst01
+  background: url($baseurl + "/assets/images/kultur/Stadttheater.jpg") center center / cover no-repeat
+.bhdah01
+  background: url($baseurl + "/assets/images/kultur/dah.jpg") center center / cover no-repeat
+.bhdah02
+  background: url($baseurl + "/assets/images/kultur/dah02.jpg") center center / cover no-repeat
+.bhkm01
+  background: url($baseurl + "/assets/images/kultur/kunstmuseum.jpg") center center / cover no-repeat
+.bhkm02
+  background: url($baseurl + "/assets/images/kultur/kunstmuseum02.jpg") center center / cover no-repeat
+.bhds01
+  background: url($baseurl + "/assets/images/kultur/schiffahrtsmuseum.jpg") center center / cover no-repeat
+.bhhm01
+  background: url($baseurl + "/assets/images/kultur/historischesmuseum.jpg") center center / cover no-repeat
+.bhkb01
+  background: url($baseurl + "/assets/images/kultur/klimahaus.jpg") center center / cover no-repeat
+.bhft01
+  background: url($baseurl + "/assets/images/kultur/fischtown.jpg") center center / cover no-repeat
+.bheb01
+  background: url($baseurl + "/assets/images/kultur/eisbaeren.jpg") center center / cover no-repeat

@@ -13,6 +13,17 @@ $screen-xs: 480px
 @media all and (max-width: $screen-s)
 @media all and (max-width: $screen-xs)
 
+.block-link
+	display: block
+	background-color: rgba(white,0)
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	&:hover
+		background-color: rgba(white,0.2)	
+
 body
 	background-color: white
 
@@ -24,6 +35,14 @@ body
 	padding: 6px 18px
 	border-radius: 2px
 
+.dark-bg
+	background-color: $dark-grey
+	color: white
+	p
+		color: white!important
+	h1,h2,h3,h4,h5,h6
+		color: white
+
 a
 	&:hover
 		color: $orange!important
@@ -32,6 +51,11 @@ a
 	display: flex
 .extra-pad
 	padding: 2em 0
+	@media all and (max-width: $screen-s)
+		padding: 0
+.last-section
+	padding: 0 0 4em 0!important
+
 .margin-bot
 	margin-bottom: 2em
 .margin-dbot
@@ -72,3 +96,10 @@ a
 	order: 6
 .order7
 	order: 7
+
+.nylogo, .miamilogo
+	width: 380px
+	display: block
+	margin: 2em auto 2em auto
+	@media all and (max-width: $screen-s)
+		width: 85%
